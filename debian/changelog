@@ -1,3 +1,9 @@
+systemd (229-4ubuntu21.2) xenial; urgency=medium
+
+  * Add 0001-Fix-reading-of-localtime-link-on-readonly-systems patch 
+
+ -- Marius Gripsgard <marius@ubports.com>  Thu, 08 Mar 2018 15:12:02 +0100
+
 systemd (229-4ubuntu21.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: remote DoS in resolved (LP: #1725351)
