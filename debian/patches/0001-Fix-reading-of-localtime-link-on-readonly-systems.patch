@@ -1,22 +1,24 @@
-From bbe9f0480b0a8d0459bc04d827abddb5db4449e2 Mon Sep 17 00:00:00 2001
+From 8a9b13a261627834c51af058ff708e4c3892c092 Mon Sep 17 00:00:00 2001
 From: Marius Gripsgard <mariogrip@ubuntu.com>
 Date: Thu, 8 Mar 2018 14:54:43 +0100
 Subject: [PATCH] Fix reading of localtime link on readonly systems
 
 ---
- src/basic/time-util.c    | 4 ++++
+ src/basic/time-util.c    | 6 ++++++
  src/timedate/timedated.c | 2 +-
- 2 files changed, 5 insertions(+), 1 deletion(-)
+ 2 files changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/src/basic/time-util.c b/src/basic/time-util.c
-index 983a87dec..45baa1c2c 100644
+index 983a87dec..5d5dd0542 100644
 --- a/src/basic/time-util.c
 +++ b/src/basic/time-util.c
-@@ -1186,6 +1186,10 @@ int get_timezone(char **tz) {
+@@ -1186,6 +1186,12 @@ int get_timezone(char **tz) {
          int r;
  
          r = readlink_malloc("/etc/localtime", &t);
 +        e = path_startswith(t, "/etc/writable/");
++        if (!e)
++            e = path_startswith(t, "writable/");
 +        if (e)
 +            r = readlink_malloc("/etc/writable/localtime", &t);
 +
