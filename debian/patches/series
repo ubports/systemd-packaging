@@ -136,6 +136,19 @@ systemctl-Replace-check_one_unit-by-get_state_one_un.patch
 systemctl-load-unit-if-needed-in-systemctl-is-active.patch
 ask-password-prevent-buffer-overrow-when-reading-fro.patch
 Append-snap-bin-to-default-PATH.patch
+core-use-an-AF_UNIX-SOCK_DGRAM-socket-for-cgroup-age.patch
+CVE-2018-16888.patch
+CVE-2018-16888-2.patch
+CVE-2019-20386.patch
+CVE-2020-1712-1.patch
+CVE-2020-1712-2.patch
+CVE-2020-1712-3.patch
+CVE-2020-1712-4.patch
+lp1839290-Change-job-mode-of-manager-triggered-restarts-to-JOB.patch
+lp1867421-70-mouse.hwdb-Set-DPI-for-MS-Classic-IntelliMouse.patch
+lp1858412-journalctl-allow-running-vacuum-on-remote-journals-t.patch
+lp1862232-network-DHCP-ignore-error-in-setting-hostname-when-i.patch
+lp1837914-journal-do-not-trigger-assertion-when-journal_file_c.patch
 
 ## UBports patches:
 0001-Fix-reading-of-localtime-link-on-readonly-systems.patch
