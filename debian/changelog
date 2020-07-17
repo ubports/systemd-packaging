@@ -1,3 +1,11 @@
+systemd (229-4ubuntu21.28ubports1) UNRELEASED; urgency=medium
+
+  * Merge changes from xenial up to version 229-4ubuntu21.28.
+    Remaining changes:
+    - Add 0001-Fix-reading-of-localtime-link-on-readonly-systems patch
+
+ -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Sat, 18 Jul 2020 00:08:26 +0700
+
 systemd (229-4ubuntu21.28) xenial; urgency=medium
 
   * d/t/logind: skip if nonexistent /sys/power/state (LP: #1862657)
