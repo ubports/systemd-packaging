@@ -1,4 +1,3 @@
-## Cherry-picked from upstream
 Backport-networkd-231.patch
 time-util-map-ALARM-clockids-to-non-ALARM-clockids-in-now.patch
 clock-util-make-clock_is_localtime-testable-and-add-initi.patch
@@ -63,8 +62,15 @@ networkd-add-support-to-configure-NOARP-ARP-for-interface.patch
 networkd-bond-support-primary-slave-and-active-slave-4873.patch
 networkd-do-not-set-NOARP-unconditionally-3891.patch
 networkd-fix-size-of-MTUBytes-so-that-it-does-not-overwri.patch
-
-## Debian specific patches
+0001-Mark-nbd-as-inactive-until-connected-2422.patch
+0001-networkd-change-UseMTU-default-to-true.-6837.patch
+0001-sysctl-configure-kernel-parameters-in-the-order-they.patch
+0001-networkd-auto-promote-links-if-promote_secondaries-i.patch
+0001-shutdown-already-sync-IO-before-we-enter-the-final-k.patch
+Fix-journald-rate-limit-with-low-disk-space.patch
+0001-sysctl-run-sysctl-service-if-proc-sys-net-is-writabl.patch
+0001-sysctl-do-not-fail-systemd-sysctl.service-if-proc-sy.patch
+0001-Add-a-RequiredForOnline-Link-attribute-for-.network-.patch
 Add-back-support-for-Debian-specific-config-files.patch
 don-t-try-to-start-autovt-units-when-not-running-wit.patch
 Make-logind-hostnamed-localed-timedated-D-Bus-activa.patch
@@ -95,8 +101,6 @@ Skip-filesystem-check-if-already-done-by-the-initram.patch
 Revert-core-one-step-back-again-for-nspawn-we-actual.patch
 Revert-core-set-RLIMIT_CORE-to-unlimited-by-default.patch
 Revert-core-enable-TasksMax-for-all-services-by-default-a.patch
-
-## Ubuntu patches:
 Support-system-image-read-only-etc.patch
 systemctl-Don-t-forward-telinit-u-to-upstart.patch
 Provide-shutdown-fallback-for-upstart.patch
@@ -105,6 +109,46 @@ Cherry-pick-subset-of-patches-to-introduce-infinity-value.patch
 debian/Ubuntu-core-in-execute-soft-fail-setting-Nice-priority-when.patch
 CVE-2017-15908.patch
 CVE-2018-1049.patch
+systemctl-correctly-proceed-to-immediate-shutdown-if-sche.patch
+hwdb-update-micmute-YCODE-on-device-node-at-DELL-LAT.patch
+hwdb-Use-wlan-keycode-for-all-Dell-systems-8762.patch
+debian/UBUNTU-units-disable-journald-watchdog.patch
+core-move-enforcement-of-the-start-limit-into-per-unit-type-code-again.patch
+CVE-2018-15688.patch
+CVE-2018-15686.patch
+CVE-2018-6954.patch
+CVE-2018-6954_2.patch
+btrfs-util-unbreak-tmpfiles-subvol-creation.patch
+test-Set-executable-bits-on-TEST-22-TMPFILES-shell-script.patch
+CVE-2018-16864.patch
+CVE-2018-16865_1.patch
+CVE-2018-16865_2.patch
+CVE-2018-16866.patch
+CVE-2019-6454.patch
+sd-bus-if-we-receive-an-invalid-dbus-message-ignore-.patch
+journal-do-not-remove-multiple-spaces-after-identifi.patch
+stop-mount-error-propagation.patch
+fix-egde-case-when-processing-proc-self-mountinfo.patch
+fix-race-daemon-reload-11121.patch
+virt-detect-WSL-environment-as-a-container-id-wsl.patch
+CVE-2019-3842.patch
+systemctl-Replace-check_one_unit-by-get_state_one_un.patch
+systemctl-load-unit-if-needed-in-systemctl-is-active.patch
+ask-password-prevent-buffer-overrow-when-reading-fro.patch
+Append-snap-bin-to-default-PATH.patch
+core-use-an-AF_UNIX-SOCK_DGRAM-socket-for-cgroup-age.patch
+CVE-2018-16888.patch
+CVE-2018-16888-2.patch
+CVE-2019-20386.patch
+CVE-2020-1712-1.patch
+CVE-2020-1712-2.patch
+CVE-2020-1712-3.patch
+CVE-2020-1712-4.patch
+lp1839290-Change-job-mode-of-manager-triggered-restarts-to-JOB.patch
+lp1867421-70-mouse.hwdb-Set-DPI-for-MS-Classic-IntelliMouse.patch
+lp1858412-journalctl-allow-running-vacuum-on-remote-journals-t.patch
+lp1862232-network-DHCP-ignore-error-in-setting-hostname-when-i.patch
+lp1837914-journal-do-not-trigger-assertion-when-journal_file_c.patch
 
 ## UBports patches:
 0001-Fix-reading-of-localtime-link-on-readonly-systems.patch
