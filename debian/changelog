@@ -1,3 +1,9 @@
+systemd (229-4ubuntu21.28ubports2) xenial; urgency=medium
+
+  * Fix crash if /etc/writable/localtime is not a symlink.
+
+ -- Ratchanan Srirattanamet <ratchanan@ubports.com>  Wed, 21 Oct 2020 01:44:52 +0700
+
 systemd (229-4ubuntu21.28ubports1) xenial; urgency=medium
 
   * Merge changes from xenial up to version 229-4ubuntu21.28.
